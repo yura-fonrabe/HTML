@@ -5,50 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <form action="#" method="get">
-        <div>
-            <label for="query">Введите запрос</label>
-            <input type="text" placeholder="Запрос ..." id="query" name="search_query" title="Нужно ввести запрос" required>
-        </div>
-        <div>
-            <label for="agree">Согласен с обработкой данных</label>
-            <input type="checkbox" name="agree" id="agree" >
-        </div>
-        <div>
-            <label for="youtube">Поиск на YuoTube</label>
-            <input type="radio" name="search" id="youtube" value="youtube">
-        </div> 
-        <div>
-            <label for="all">Поиск по всюду</label>
-            <input type="radio" name="search" id="all" value="all">
-        </div>
-        <div>
-            <label for="topic">Тематика</label>
-            <select name="topic" id="topic">
-                <option value="1">Все</option>
-                <optgroup label="Популярные">
-                    <option value="2" selected>Животные</option>
-                    <option value="3">Разработка</option>
-                </optgroup>                
-            </select>
-        </div>
-        <div>
-            <label for="volume">Громкость</label>
-            <input type="range" name="volume" id="volume" min="0" max="10" step="2">
-        </div>
-        <div>
-            <label for="num">Оценка</label>
-            <input type="number" name="num" id="num" min="0" max="5" step="1">
-        </div>
-        <div>
-            <label for="text">Комментарий</label>
-            <textarea name="text" id="text" rows="10" cols="40" placeholder="Введите текст"></textarea>
-        </div>
-        <button>Искать на YuoTube</button>
-    </form>
+    <h1>Свяжитесь со мной</h1>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" placeholder="Введите E-mail" required>
+            </div>
+            <div>
+                <label for="telegram">Telegram</label>
+                <input type="text" name="telegram" id="telegram" placeholder="Введите telegram">
+            </div>
+            <div>
+                <label for="topic">Тема*</label>
+                <select name="topic" id="topic" required>
+                    <option value="courses">Приобретение курсов</option>
+                    <option value="feedback">Обратная связь</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <button>Отправить</button>
+        </form>
+    </main>    
 </body>
 
 </html>
